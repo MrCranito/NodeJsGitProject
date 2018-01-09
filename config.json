@@ -1,0 +1,13 @@
+{
+  "salt_rounds": 10,
+  "secret": "mysupersecret",
+  "auth_time": 24,
+  "origin": "*",
+  "madatabaseexemple": {
+    "host": "",
+    "port": "",
+    "user": "",
+    "password": "",
+    "database": ""
+  }
+}

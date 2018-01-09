@@ -1,0 +1,30 @@
+{
+    "title": "Project NodeJs",
+    "name": "Project Node",
+    "version": "0",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "description": "Project Nodejs Ynov B3 Moreau Tifour Medjboub",
+    "dependencies": {
+        "angular": "^1.6.7",
+        "angular-route": "^1.6.7",
+        "body-parser": "^1.18.2",
+        "bootstrap": "^4.0.0-beta.2",
+        "cfenv": "^1.0.4",
+        "cors": "^2.8.4",
+        "datatables.net-bs4": "1.10.16",
+        "express": "^4.16.2",
+        "express-validator": "^4.3.0",
+        "font-awesome": "4.7.0",
+        "helmet": "^3.9.0",
+        "jquery": "^3.2.1",
+        "jquery.easing": "^1.4.1",
+        "logger": "0.0.1",
+        "morgan": "^1.9.0",
+        "require-dir": "^0.3.2",
+        "socket.io": "^2.0.3",
+        "winston": "^2.4.0"
+    }
+}
