@@ -185,6 +185,7 @@
         directionsService = new google.maps.DirectionsService();
         directionsDisplay.setMap(map);
 
+
         // Try HTML5 geolocation.
        if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -276,22 +277,14 @@
         });
         }
         google.maps.event.addListener(marker, 'click', function() {
-          var contentString =
-            '<div class="col-md">'+   
-          '<div class="card card-01 height-fix">'+
-          '<img class="card-img-top" src="http://res.cloudinary.com/amritvirk23/image/upload/v1506061057/poc.jpg" alt="Card image cap">'+
-          '<div class="card-img-overlay">'+
-            '<h4 class="card-title"><strong>'+place.name+'</strong></h4>'+
-            '<p class="card-text">Captain Jack Sparrow searches for the trident of Poseidon.</p>'+
-            '<p class="card-text"><a href="#" class="fa fa-bookmark-o"></a><a class="fa fa-heart-o" href="#"></a></p>'+
-          '</div>'+
-        '</div>'+
-        '</div>';
           var infowindow = new google.maps.InfoWindow({
-          content: contentString
+          content: document.getElementById("infobox")
         });
           infowindow.open(map, this);
           calculedRoute(marker,currentPosition);
+          $("#infobox").parents('div:eq(2)').children('div:eq(0)').children('div:eq(1)').css("display","none");  
+         //  $("#infobox").parents('div')[2].children('div')[2].childrens('div')[2].remove();  
+          $("#infobox").parents('div:eq(2)').children('div:eq(0)').children('div:eq(3)').css("display","none");
 
 
 
@@ -319,7 +312,7 @@
 
       }
         setInterval(getCurrentBar,2000);
-      
+       
 
 
 

@@ -22,6 +22,7 @@
         "jquery": "^3.2.1",
         "jquery.easing": "^1.4.1",
         "logger": "0.0.1",
+        "mdi": "^2.1.19",
         "morgan": "^1.9.0",
         "require-dir": "^0.3.2",
         "socket.io": "^2.0.3",
