@@ -4,10 +4,10 @@
   "auth_time": 24,
   "origin": "*",
   "madatabaseexemple": {
-    "host": "",
-    "port": "",
-    "user": "",
+    "host": "http://localhost:3306",
+    "port": "3306",
+    "user": "root",
     "password": "",
-    "database": ""
+    "database": "appbar"
   }
 }

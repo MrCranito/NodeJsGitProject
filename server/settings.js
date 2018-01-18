@@ -16,5 +16,6 @@ module.exports = {
     'SALT_ROUNDS': config.salt_rounds,
     'ORIGIN': config.origin,
     'APP_NAME': nodeApp.name,
-    'APP_VERSION': nodeApp.version
+    'APP_VERSION': nodeApp.version,
+    'DATABASE' : config.madatabaseexemple
 };
