@@ -1,13 +1,13 @@
 {
-  "salt_rounds": 10,
-  "secret": "mysupersecret",
-  "auth_time": 24,
+  "salt_rounds":"",
+  "secret": "",
+  "auth_time":"",
   "origin": "*",
   "madatabaseexemple": {
-    "host": "http://localhost:3306",
+    "host": "",
     "port": "3306",
     "user": "root",
     "password": "",
-    "database": "appbar"
+    "database": ""
   }
 }

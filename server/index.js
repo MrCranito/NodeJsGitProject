@@ -1,8 +1,4 @@
 "use strict";
-/*eslint-env node*/
-//------------------------------------------------------------------------------
-// node.js starter application for Bluemix
-//------------------------------------------------------------------------------
 
 var settings = require('./settings');
 
@@ -10,21 +6,18 @@ var settings = require('./settings');
 // for more info, see: https://www.npmjs.com/package/cfenv
 var cfenv = require('cfenv');
 
-// This application uses express as its web server
-// for more info, see: http://expressjs.com
+
 var express = require('express');
 
 // load express middlewares
 var cors = require('cors');
 
 var bodyParser = require('body-parser');
-//var expressValidator = require('express-validator');
+
 
 //const io = require('socket.io');
 
-// load logger
 
-// load custom middlewares
 var poweredBy = require('./middlewares/powered-by');
 var security = require('./middlewares/security');
 var notFound = require('./middlewares/not-found');

@@ -1,88 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-<head>
-     <link rel="stylesheet" href ="css/bootstrap.min.css" type ="text/css">
-     <link rel="stylesheet" href="css/map.css">
-     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">Navbar</a>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</head>
-<body>
+  <head>
 
-          <form method="get" action="">
-                <button type="submit">Continue</button>
-          </form>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>Landing Page - Start Bootstrap Theme</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-          <div id="map"></div>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
 
-<div class="container" id="infobox">
-  <div class="cellphone-container">    
-      <div class="movie">       
-        <button class="movie-img" src="http://i63.tinypic.com/17s7me.jpg"></button>
-        <div class="text-movie-cont">
-          <div class="mr-grid">
-            <div class="col1">
-              <h1>Interstellar</h1>
-            </div>
-          </div>
-          <div class="mr-grid summary-row" style="padding-top: 25px">
-            <div class="col2">
-              <h5>SUMMARY</h5>
-            </div>
-            <div class="col2">
-               <ul class="movie-likes">
-                <li><i class="material-icons">&#xE813;</i>124</li>
-                <li><i class="material-icons">&#xE813;</i>3</li>
-              </ul>
-            </div>
-          </div>
-          <div class="mr-grid">
-            <div class="col1">
-              <p class="movie-description"></p>
-            </div>
-          </div>
-         
-          
-        </div>
+  </head>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Blizzard Stats</a>
+        <a class="btn btn-primary" href="#">Sign In</a>
       </div>
-  </div>
-</div>
+    </nav>
+    <div ng-view>
+        <div class="container" layout="column" ng-controller="DashboardController" flex>
+            <md-content ui-view="container" layout-padding flex></md-content>    
+    </div>
 
-</body>
-<footer>
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/map.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzDmilhDnEzmJ1ZVNAiv3bYDrNEmyCPIY&libraries=places&callback=initMap"></script>
+
     
-
-    <script>
-            $(function(){
-                $("#navbar").load("modal/navbar.html");
-            });
-  </script>
-</footer>
 </html>
